@@ -1,0 +1,27 @@
+/* Footer container */
+.footer-container {
+    background-color: #243642;
+    height: 200px;
+    /* display: grid; */
+    place-items: center;
+    color: white;
+  }
+  
+  /* Footer content */
+  .footer-content {
+    text-align: center;
+    gap:30px;
+  }
+  
+  
+  /* Paragraphs inside footer */
+  .footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .last{
+    padding-top: 20px;
+    font-size: 28px;
+  
+  }

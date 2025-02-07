@@ -1,0 +1,140 @@
+.hero {
+    background-image: url('/cha.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.95;
+    display: flex;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .content {
+    max-width: 450px;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .greeting {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+    transition: font-size 1s ease;
+  }
+  
+  .name {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #ff6600;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+    transition: font-size 1s ease;
+  }
+  
+  .separator {
+    background-color: #ff4d41;
+    height: 3px;
+    width: 90px;
+  }
+  
+  .description {
+    margin-top: 15px;
+  }
+  
+  .description p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    transition: transform 1s ease;
+  }
+  
+  .learn-more {
+    background-color: #ff6600;
+    color: white;
+    font-size: 1.125rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+  }
+  
+  .learn-more:hover {
+    background-color: #ff7f3f;
+    font-size: 1.125rem;
+  }
+  
+  .social-links {
+    position: absolute;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    font-size: 2rem;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #ff6600;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .name {
+      font-size: 2rem;
+    }
+  
+    .greeting {
+      font-size: 1.125rem;
+    }
+  
+    .learn-more {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    .social-links {
+      right: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .name {
+      font-size: 1.5rem;
+    }
+  
+    .greeting {
+      font-size: 1rem;
+    }
+  
+    .learn-more {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  
+    .social-links {
+      right: 0.5rem;
+    }
+  }
+  

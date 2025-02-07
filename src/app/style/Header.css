@@ -1,0 +1,174 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header Styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #243642;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 2rem;
+  }
+  
+  .site-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 750px;
+   
+  }
+  
+  .desktop-menu {
+    display: flex;
+    margin-top: 9px;
+    list-style: none;
+  }
+  
+  .desktop-menu li {
+    margin-right: 20px;
+  }
+  
+  .desktop-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  /* .desktop-menu li a:hover {
+    color: #ffd700;
+  } */
+  
+  /* CV Button */
+  .cv-button {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    background-color:#38a169;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .cv-button:hover {
+    background-color: #38a169;
+  
+  }
+  
+  .cv-button svg {
+    margin-left: 5px;
+  }
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .header {
+      padding: 15px;
+    }
+  
+    .logo {
+      font-size: 1.8rem; /* Slightly smaller logo */
+    }
+  
+    .site-name {
+      font-size: 1.3rem; /* Slightly smaller site name */
+    }
+  
+    .desktop-menu {
+      gap: 15px; /* Space out the menu items */
+    }
+  
+    .desktop-menu li {
+      margin-right: 10px; /* Reduce margin between items */
+    }
+  
+    .desktop-menu li a {
+      font-size: 1.1rem; /* Reduce font size of links */
+    }
+  
+    .cv-button {
+      font-size: 1rem; /* Adjust font size of the CV button */
+      padding: 8px 18px; /* Adjust button padding */
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px; /* Reduce padding for mobile */
+    }
+  
+    .logo {
+      font-size: 1.5rem; /* Further reduce logo size */
+    }
+  
+    .site-name {
+     display: none;
+    }
+  
+    .desktop-menu {
+      gap: 10px; /* Further reduce space between items */
+    }
+  
+    .desktop-menu li {
+      margin-right: 5px; /* Even smaller margin */
+      font-size: 14px;
+      padding-top: 7px;
+    }
+  
+    .desktop-menu li a {
+      font-size: 1rem; /* Further reduce font size for links */
+    }
+  
+    .cv-button {
+      font-size: 0.9rem; /* Adjust font size of the CV button */
+      padding: 6px 14px; /* Adjust button padding */
+    }
+  }
+  @media (max-width: 360px) {
+    .header {
+      padding: 10px; /* Reduce padding for mobile */
+    }
+  
+    .logo {
+      font-size: 1.5rem; /* Further reduce logo size */
+    }
+  
+    .site-name {
+      font-size: 14px; /* Further reduce site name size */
+    }
+  
+    .desktop-menu {
+      gap: 10px; /* Further reduce space between items */
+    }
+  
+    .desktop-menu li {
+      margin-right: 5px; /* Even smaller margin */
+      font-size: 14px;
+      padding-top: 7px;
+    }
+  
+    .desktop-menu li a {
+      font-size: 1rem; /* Further reduce font size for links */
+    }
+  
+    .cv-button {
+      font-size: 0.9rem; /* Adjust font size of the CV button */
+      padding: 6px 14px; /* Adjust button padding */
+    }
+  }
+  
+  

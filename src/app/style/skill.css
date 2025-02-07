@@ -1,0 +1,81 @@
+/* Skill.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    padding-bottom: 119px; /* Equivalent to md:mb-[119px] */
+  }
+  
+  .title {
+    color: #232940;
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #232940;
+    transition: color 0.3s;
+  }
+  
+  .link:hover {
+    color: #3b3b3b; /* Equivalent to hover:text-slate-700 */
+  }
+  
+  .titleUnderline {
+    background-color: #ff4d41;
+    height: 2px;
+    width: 40px;
+    transform: translateY(4px);
+  }
+  
+  .description {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+  }
+  
+  .skillItem {
+    position: relative;
+  }
+  
+  .skillName {
+    font-size: 18px;
+    font-weight: 400;
+    transition: transform 0.3s;
+  }
+  
+  .skillName:hover {
+    transform: translateX(12px);
+  }
+  
+  .progressBar {
+    background-color: #d1d5db;
+    height: 4px;
+    margin-top: 12px;
+    position: relative;
+  }
+  
+  .progressFill {
+    background-color: #ff4d41;
+    height: 100%;
+    position: absolute;
+    left: 0;
+  }
+  

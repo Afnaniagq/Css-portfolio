@@ -1,0 +1,117 @@
+/* projects.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .text-title {
+    color: #232940;
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 1rem 0;
+  }
+  
+  .text-title a {
+    transition: color 0.3s ease;
+  }
+  
+  .text-title a:hover {
+    color: #4e5e6d;
+  }
+  
+  .title-underline {
+    background-color: #ff4d41;
+    height: 2px;
+    width: 40px;
+    transform: translateY(4px);
+  }
+  
+  .project-divider {
+    display: none;
+  }
+  
+
+  .project-container {
+    display: flex;
+    flex-direction:row;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    position: relative;
+  }
+  
+  .project-container-md {
+    flex-direction: row;
+  }
+  
+  .project-image {
+    width: 500px;
+    height: 450px;
+    /* object-fit: cover; */
+  }
+  
+  .project-link {
+    display: block;
+    position: relative;
+  }
+  
+  .project-title {
+    color: #fc815c;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .project-follow {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .project-description {
+    text-align:justify;
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+  
+  .project-description-md {
+    font-size: 17px;
+    margin-top: 2rem;
+  }
+  
+  .project-icon {
+    font-size: 24px;
+    fill: black;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .project-button {
+    background-color: #f97316;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 17px;
+  }
+  
+  .project-button:hover {
+    background-color: #ea580c;
+    font-size: 18px;
+  }
+  
+  .project-button:focus {
+    outline: none;
+  }
+  .total{
+    margin-left:165px;
+  }
+  .pagen{
+    color:black;
+  }
+  .link{
+    display: flex;
+
+  }

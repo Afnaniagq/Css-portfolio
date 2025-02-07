@@ -1,4 +1,4 @@
-import "../style/header.css";
+import "../style/Header.css";
 import Link from "next/link";
 import { IoLogoAngular } from "react-icons/io5";
 import { MdOutlineFileDownload } from "react-icons/md";

@@ -7,7 +7,7 @@ import React from "react";
 function About() {
   return (
     <section className="about-container">
-      <div className="about-header">
+    <div className="about-header">
         <Link href="/about" className="about-link">About</Link>
         <div className="underline"></div>
       </div>

@@ -1,148 +1,211 @@
-/* about.css */
-
 /* Container for About section */
 .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
-  
-  /* About Header */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* About Header */
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #232940;
+  padding-bottom: 40px;
+}
+
+.about-link {
+  color: #232940;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.about-link:hover {
+  color: #2e2e2e;
+}
+
+.underline {
+  background-color: #ff4d41;
+  height: 4px;
+  width: 40px;
+  margin-top: 4px;
+}
+
+/* About Content */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  /* Added grid layout for flexibility */
+}
+
+.about-image {
+  text-align: center;
+}
+
+.about-img {
+  transition: transform 0.5s ease;
+}
+
+.about-img:hover {
+  transform: translateX(10px);
+}
+
+/* About Info */
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-title {
+  color: black;
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about-title.md {
+  font-size: 25px;
+}
+
+.about-description {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #333;
+}
+
+.hire-button {
+  background-color: #ff4d41;
+  color: white;
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+
+.hire-button:hover {
+  background-color: #ff3a2d;
+  font-size: 20px;
+}
+
+.download {
+  background-color: rgba(58, 128, 0, 0.909);
+  padding: 3px;
+  width: 27%;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 5%;
+  font-size: 18px;
+  color: white;
+  transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+
+.download:hover {
+  font-size: 20px;
+}
+
+/* Responsive Styles */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
   .about-header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    font-size: 32px;
-    font-weight: 500;
-    color: #232940;
-    padding-bottom: 40px;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 28px;
   }
-  
-  .about-link {
-    color: #232940;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .about-link:hover {
-    color: #2e2e2e;
-  }
-  
-  .underline {
-    background-color: #ff4d41;
-    height: 4px;
-    width: 40px;
-    margin-top: 4px;
-  }
-  
-  /* About Content */
+
   .about-content {
-    display: flex;
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 40px;
   }
-  
-  .about-image {
-    text-align: center;
-  }
-  
-  .about-img {
-    transition: transform 0.5s ease;
-  }
-  
-  .about-img:hover {
-    transform: translateX(10px);
-  }
-  
-  /* About Info */
-  .about-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  
+
   .about-title {
-    color: black;
-    font-weight: 600;
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 24px;
   }
-  
-  .about-title.md {
-    font-size: 25px;
-  }
-  
+
   .about-description {
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    color: #333;
+    font-size: 15px;
   }
- 
+
   .hire-button {
-    background-color: #ff4d41;
-    color: white;
-    font-size: 17px;
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, font-size 0.3s ease;
+    font-size: 18px;
+    width: 140px;
+    padding: 8px 16px;
   }
-  
-  .hire-button:hover {
-    background-color: #ff3a2d;
+
+  .download {
+    width: 30%;
+  }
+}
+
+/* For mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .about-header {
+    flex-direction: column;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 22px;
+  }
+
+  .about-description {
+    font-size: 14px;
+  }
+
+  .hire-button {
+    font-size: 16px;
+    width: 120px;
+    padding: 8px 16px;
+  }
+
+  .download {
+    width: 50%;
+  }
+
+  .about-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .about-header {
     font-size: 20px;
   }
-  .download{
-    background-color:rgba(58, 128, 0, 0.909);
-    padding:3px;
-    width: 27%;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    border-radius: 5%;
-    font-size:18px; 
-    color: white;
-    transition: background-color 0.3s ease, font-size 0.3s ease;
+
+  .about-title {
+    font-size: 18px;
   }
-  .download:hover{
-    font-size: 20px;
+
+  .about-description {
+    font-size: 13px;
   }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .about-title {
-      font-size: 22px;
-    }
-  
-    .about-description {
-      font-size: 14px;
-    }
-  
-    .hire-button {
-      font-size: 16px;
-      width: 120px;
-      padding: 8px 16px;
-    }
+
+  .hire-button {
+    font-size: 14px;
+    width: 100px;
+    padding: 6px 12px;
   }
-  
-  @media (max-width: 480px) {
-    .about-title {
-      font-size: 18px;
-    }
-  
-    .about-description {
-      font-size: 13px;
-    }
-  
-    .hire-button {
-      font-size: 14px;
-      width: 100px;
-      padding: 6px 12px;
-    }
+
+  .download {
+    width: 60%;
   }
-  
+
+  .about-img {
+    width: 100%;
+    height: auto;
+  }
+}

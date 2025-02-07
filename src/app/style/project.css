@@ -2,9 +2,10 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .text-title {
+    padding: 0 20px; /* Added padding for mobile screens */
+}
+
+.text-title {
     color: #232940;
     font-size: 32px;
     font-weight: 500;
@@ -12,106 +13,222 @@
     align-items: center;
     gap: 16px;
     padding: 1rem 0;
-  }
-  
-  .text-title a {
+    flex-wrap: wrap; /* Ensure title wraps on smaller screens */
+}
+
+.text-title a {
     transition: color 0.3s ease;
-  }
-  
-  .text-title a:hover {
+}
+
+.text-title a:hover {
     color: #4e5e6d;
-  }
-  
-  .title-underline {
+}
+
+.title-underline {
     background-color: #ff4d41;
     height: 2px;
     width: 40px;
     transform: translateY(4px);
-  }
-  
-  .project-divider {
-    display: none;
-  }
-  
+}
 
-  .project-container {
+.project-divider {
+    display: none;
+}
+
+/* Project container layout */
+.project-container {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     gap: 80px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Adjust for vertical alignment */
     margin-top: 1rem;
     position: relative;
-  }
-  
-  .project-container-md {
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.project-container-md {
     flex-direction: row;
-  }
-  
-  .project-image {
-    width: 500px;
-    height: 450px;
-    /* object-fit: cover; */
-  }
-  
-  .project-link {
+}
+
+/* Project image */
+.project-image {
+    width: 100%; /* Make image responsive */
+    max-width: 500px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image covers area nicely */
+}
+
+/* Project link */
+.project-link {
     display: block;
     position: relative;
-  }
-  
-  .project-title {
+}
+
+/* Project title */
+.project-title {
     color: #fc815c;
     font-weight: bold;
     font-size: 2rem;
-  }
-  
-  .project-follow {
+    text-align: center;
+}
+
+/* Project follow section */
+.project-follow {
     display: flex;
     gap: 8px;
-  }
-  
-  .project-description {
-    text-align:justify;
+    justify-content: center;
+}
+
+/* Project description */
+.project-description {
+    text-align: justify;
     font-size: 16px;
     margin-top: 1rem;
-  }
-  
-  .project-description-md {
+}
+
+.project-description-md {
     font-size: 17px;
     margin-top: 2rem;
-  }
-  
-  .project-icon {
+}
+
+/* Project icon */
+.project-icon {
     font-size: 24px;
     fill: black;
     transition: transform 0.3s ease;
-  }
-  
-  
-  .project-button {
+}
+
+/* Project button */
+.project-button {
     background-color: #f97316;
     color: white;
     border-radius: 8px;
     padding: 12px 16px;
     text-align: center;
     font-size: 17px;
-  }
-  
-  .project-button:hover {
+    width: 100%;
+    max-width: 200px; /* Limit button size */
+}
+
+.project-button:hover {
     background-color: #ea580c;
     font-size: 18px;
-  }
-  
-  .project-button:focus {
-    outline: none;
-  }
-  .total{
-    margin-left:165px;
-  }
-  .pagen{
-    color:black;
-  }
-  .link{
-    display: flex;
+}
 
-  }
+.project-button:focus {
+    outline: none;
+}
+
+/* Pagination */
+.total {
+    margin-left: 165px;
+}
+
+.pagen {
+    color: black;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Responsive Styles */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .text-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .project-container {
+        gap: 40px;
+    }
+
+    .project-title {
+        font-size: 1.8rem;
+    }
+
+    .project-description {
+        font-size: 15px;
+    }
+
+    .project-button {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .project-follow {
+        gap: 16px;
+    }
+
+    .total {
+        margin-left: 0;
+    }
+}
+
+/* For mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .text-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .project-title {
+        font-size: 1.6rem;
+    }
+
+    .project-description {
+        font-size: 14px;
+    }
+
+    .project-button {
+        font-size: 15px;
+        width: 100%;
+        padding: 10px 14px;
+    }
+
+    .project-image {
+        width: 80%;
+        max-width: 350px;
+    }
+}
+
+/* For smaller mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .text-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .project-title {
+        font-size: 1.4rem;
+    }
+
+    .project-description {
+        font-size: 13px;
+    }
+
+    .project-button {
+        font-size: 14px;
+        width: 100%;
+        padding: 8px 12px;
+    }
+
+    .project-image {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .project-container {
+        gap: 20px;
+    }
+}
